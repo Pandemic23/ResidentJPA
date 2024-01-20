@@ -1,10 +1,10 @@
-package com.nhnacademy.Resident.service;
+package com.nhnacademy.Resident.service.resident;
 
-import com.nhnacademy.certificate.dto.resident.ResidentRequest;
-import com.nhnacademy.certificate.dto.resident.ResidentResponse;
-import com.nhnacademy.certificate.entity.Resident;
-import com.nhnacademy.certificate.exception.ResidentNotFoundException;
-import com.nhnacademy.certificate.repository.resident.ResidentRepository;
+import com.nhnacademy.Resident.Dto.resident.ResidentRequest;
+import com.nhnacademy.Resident.Dto.resident.ResidentResponse;
+import com.nhnacademy.Resident.entity.Resident;
+import com.nhnacademy.Resident.exception.ResidentNotFoundException;
+import com.nhnacademy.Resident.repository.resident.ResidentRepository;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

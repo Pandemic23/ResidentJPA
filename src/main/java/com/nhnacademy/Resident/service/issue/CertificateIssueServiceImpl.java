@@ -1,7 +1,7 @@
-package com.nhnacademy.Resident.service;
+package com.nhnacademy.Resident.service.issue;
 
-import com.nhnacademy.certificate.dto.web.CertificateIssueResponse;
-import com.nhnacademy.certificate.repository.certificate.CertificateIssueRepository;
+import com.nhnacademy.Resident.Dto.web.CertificateIssueResponse;
+import com.nhnacademy.Resident.repository.certificate.CertificateIssueRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
