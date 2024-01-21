@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 @RequiredArgsConstructor
 public class ResidentController {
+
     private final ResidentService residentService;
 
     @GetMapping
@@ -36,5 +37,4 @@ public class ResidentController {
         modelMap.addAttribute("resident", resident);
         return "certificationMain";
     }
-
 }

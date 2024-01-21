@@ -1,6 +1,5 @@
 package com.nhnacademy.Resident.controller.web;
 
-
 import com.nhnacademy.Resident.Dto.resident.ResidentResponse;
 import com.nhnacademy.Resident.Dto.web.BirthCertificateResponse;
 import com.nhnacademy.Resident.Dto.web.CertificateIssueResponse;
@@ -34,7 +33,6 @@ public class CertificateController {
     private final BirthDeathReportService birthDeathReportService;
     private final HouseholdService householdService;
     private final CertificateIssueService certificateIssueService;
-
 
     @GetMapping("/{serialNumber}/family")
     public String familyCertification(@PathVariable Long serialNumber, ModelMap modelMap) {
@@ -86,5 +84,4 @@ public class CertificateController {
         modelMap.addAttribute("totalPages", totalPages);
         return "certificateIssue";
     }
-
 }
