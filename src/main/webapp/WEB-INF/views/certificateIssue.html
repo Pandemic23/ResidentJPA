@@ -2,7 +2,7 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>주민관리 서비스 - By Ramos</title>
+    <title>주민관리 서비스</title>
 </head>
 <body>
 <h1>증명서 발급 내역</h1>
@@ -23,7 +23,8 @@
     </tr>
 </table>
 <div th:with="totalPages = ${totalPages}" class="pagination">
-    <a th:each="pageNumber : ${#numbers.sequence(1, totalPages)}" th:href="@{/certificate/{serialNumber}/issue(serialNumber=${certificates[0].residentSerialNumber}, page=${pageNumber}-1)}"
+    <a th:each="pageNumber : ${#numbers.sequence(1, totalPages)}"
+       th:href="@{/certificate/{serialNumber}/issue(serialNumber=${certificates[0].residentSerialNumber}, page=${pageNumber}-1)}"
        th:text="${pageNumber} + ' '"></a>
 </div>
 <a href="/">홈으로</a>
